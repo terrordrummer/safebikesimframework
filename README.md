@@ -1,8 +1,10 @@
 # safebikesimframework
-This is the Safebike Training Simulator's core framework over which the Safebike Training Simulator have been developed.
+This is the Safebike Training Simulator's core layer over which the Safebike Training Simulator have been developed.
 
-The framework has been developed in order to have an uniform SDK implementing all operations needed for implementing a distributed simulation architecture.
-This the list of the frameworks included in this SDK:
+This software layer has been developed in order to have an uniform SDK implementing all operations needed for implementing a distributed simulation architecture.
+You can find a complete **doxygen documentation** [here](http://robertosartoridev.com/doxygen/safebikesimframework/namespaces.html).
+
+Briefly, this the list of the frameworks included in this SDK:
 
 ### FrameworkCore
 
