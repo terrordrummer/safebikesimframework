@@ -1,5 +1,5 @@
 # safebikesimframework
-This is the Safebike Training Simulator's core layer over which the Safebike Training Simulator have been developed.
+This is the Safebike Training Simulator's core layer over which the [Safebike Training Simulator](http://www.dynamotion.it/eng/products/hardware/simulator.html) have been developed.
 
 This software layer has been developed in order to have an uniform SDK implementing all operations needed for implementing a distributed simulation architecture.
 
