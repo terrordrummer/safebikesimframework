@@ -1,0 +1,8 @@
+*/debug
+debug/
+debug-static/
+release/
+release-static/
+*.user
+*.suo
+*.dbc
