@@ -12,20 +12,20 @@ Briefly, this the list of the frameworks included in this SDK:
 Implements the core functions like error managements, tracing, inter-process comunications, etc.
 The implemented classes are:
 
-* **CError**: error management class
-* **CExtendedString**: extend standard std::string with useful operations
-* **CGenericType**: implement a dynamc-binding variable plus dynamic structure vatriables using a special syntax
-* **CSharedStruct**: inter-process shared structures
-* **CSynch**: synchronization implemented at three levels, object instance level, intra-process level and inter-process level.
-* **CThread**: multi-thread management with rich features
-* **CTime**: high-precision tic/toc timing functions
-* **CTrace**: messages trace management
+* [CError](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkCore_1_1CError.html): error management class
+* [CExtendedString](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkCore_1_1CExtendedString.html): extend standard std::string with useful operations
+* [CGenericType](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkCore_1_1CGenericType.html): implement a dynamc-binding variable plus dynamic structure vatriables using a special syntax
+* [CSharedStruct](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkCore_1_1CSharedStruct.html): inter-process shared structures
+* [CSynch](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkCore_1_1CSynch.html): synchronization implemented at three levels, object instance level, intra-process level and inter-process level.
+* [CThread](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkCore_1_1CThread.html): multi-thread management with rich features
+* [CTime](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkCore_1_1CTime.html): high-precision tic/toc timing functions
+* [CTrace](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkCore_1_1CTrace.html): messages trace management
 
 ### [FrameworkEnvironment](http://robertosartoridev.com/doxygen/safebikesimframework/namespaceFrameworkEnvironment.html)
 Implements a class for the management of a workspace.
 The implemented classes are:
 
-* **CEnvironment**: implements an environment object which can be used to set/get variables, save to/load from file, merge two environments, auto-trace environment changes, lock/unlock for multthread-safe operations.
+* [CEnvironment](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkEnvironment_1_1CEnvironment.html): implements an environment object which can be used to set/get variables, save to/load from file, merge two environments, auto-trace environment changes, lock/unlock for multthread-safe operations.
 
 ### [FrameworkCANBus](http://robertosartoridev.com/doxygen/safebikesimframework/namespaceFrameworkCanBus.html)
 
@@ -37,14 +37,14 @@ The library will pack/unpack signals, synch to signals, synch to messages, let t
 
 Implements the Inter-Process Comunication layer. The implemented classes are:
 
-* **CP2P**: low-level inter-process comunication, connect/disconnect and read/write operations are implemented in this class
-* **CIPC**: high-level application layer for inter-process comunication, implements the concept of communication channels and publish data to channels and synch for data receiving events from a channel.
+* [CP2P](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkIPC_1_1CP2P.html): low-level inter-process comunication, connect/disconnect and read/write operations are implemented in this class
+* [CIPC](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkIPC_1_1CIPC.html): high-level application layer for inter-process comunication, implements the concept of communication channels and publish data to channels and synch for data receiving events from a channel.
 
 ### [FrameworkLUA](http://robertosartoridev.com/doxygen/safebikesimframework/namespaceFrameworkLUA.html)
 
 Implements LUA script parsing. The implemented classes are:
 
-* **CWrapperLua**: LUA wrapper class, implements all needed to read/run scripts and read/write vars into the LUA environment
+* [CWrapperLua](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkLUA_1_1CWrapperLua.html): LUA wrapper class, implements all needed to read/run scripts and read/write vars into the LUA environment
 
 ### [FrameworkMath](http://robertosartoridev.com/doxygen/safebikesimframework/namespaceFrameworkMath.html)
 
@@ -54,20 +54,20 @@ Implements some math specifically needed for the road management like 2D points 
 
 Implements a mechanism for plugin implementation. The implemented classes are:
 
-* **CPlugin**: his is the abstract class to be inerhited to create a plugin
-* **CpluginManager**: this class implements the plugin manager that scan for/loads/initialize/unloads the plugins
+* [CPlugin](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkPlugin_1_1CPlugin.html): his is the abstract class to be inerhited to create a plugin
+* [CpluginManager](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkPlugin_1_1CPluginManager.html): this class implements the plugin manager that scan for/loads/initialize/unloads the plugins
 
 ### [FrameworkQueueTools](http://robertosartoridev.com/doxygen/safebikesimframework/namespaceFrameworkQueueTools.html)
 
 Implements some classes for the management of command queues. Command queues are queue where objects are command to be executed, the management is basically to add commands asynchronously and let the queue to process such command list anytime is needed. The implemented classes are:
 
-* **CCommandQueueableClass**: this class is used to implement a queueable commands
-* **CCommandQueueManager**: manager for the command queue, allows to push new commands and process the queue when needed
+* [CCommandQueueableClass](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkQueueTools_1_1CCommandQueueableClass.html): this class is used to implement a queueable commands
+* [CCommandQueueManager](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkQueueTools_1_1CCommandQueueManager.html): manager for the command queue, allows to push new commands and process the queue when needed
 
 ### [FrameworkSimArc](http://robertosartoridev.com/doxygen/safebikesimframework/namespaceFrameworkSimArc.html)
 
 Implements the classes needed for coordinating a simulation. In particular, an instance CSimControl class will have the simulation control role and it will initialize/start/pause/stop the whole simulation processes while each simunlation process will have a single instance of the CSimProcess class to be controlled by the simulation controller. The implemented classes are:
 
-* **CSimControl**: controls the simulation by initializing/starting/pausing/stopping the simulation processes
-* **CSimProcess**: implements a process that can be controlled by the simulation controller
-* **CSimProcessDelegate**: this instance will receive the events by the CSimProcess instance in order to react to the initialize/start/pause/stop messages.
+* [CSimControl](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkSimArc_1_1CSimControl.html): controls the simulation by initializing/starting/pausing/stopping the simulation processes
+* [CSimProcess](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkSimArc_1_1CSimProcess.html): implements a process that can be controlled by the simulation controller
+* [CSimProcessDelegate](http://robertosartoridev.com/doxygen/safebikesimframework/classFrameworkSimArc_1_1CSimProcessDelegate.html): this instance will receive the events by the CSimProcess instance in order to react to the initialize/start/pause/stop messages.
